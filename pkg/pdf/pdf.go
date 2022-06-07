@@ -372,6 +372,7 @@ func (s *PdfMaroto) Row(height float64, closure func()) {
 			s.headerFooterContextActive = false
 			s.offsetY = 0
 			s.pageIndex++
+			s.Pdf.AddPage()
 		}
 	}
 
